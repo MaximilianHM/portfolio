@@ -17,8 +17,8 @@ function Contacts() {
       <div className="right">
         <h2>Contact</h2>
         <form onSubmit={handleSubmit}>
-          <input type="email" placeholder="email" />
-          <textarea placeholder="Message"></textarea>
+          <input type="email" placeholder="E-mail" />
+          <textarea placeholder="Leave your message here"></textarea>
           <button type="submit">Send</button>
           {message && <span>Tahnks, I'll reply ASAP :) </span>}
         </form>

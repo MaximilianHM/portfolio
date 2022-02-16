@@ -18,7 +18,7 @@ function Testimonials() {
       title: "Co-Founder of DELKA",
       img: "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       icon: "assets/youtube.png",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam ducimus vel hic temporibus. ",
       featured: true,
     },
     {
