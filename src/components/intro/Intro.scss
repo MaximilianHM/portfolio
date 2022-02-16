@@ -1,6 +1,13 @@
+@import "../../global.scss";
+
 .intro {
   background-color: white;
   display: flex;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
 
   .left {
     flex: 0.5;
@@ -16,8 +23,18 @@
       justify-content: center;
       float: right;
 
+      @include mobile {
+        align-items: flex-start;
+        width: 600px;
+        height: 600px;
+      }
+
       img {
         height: 80%;
+
+        @include mobile {
+          margin-top: 15%;
+        }
       }
     }
   }
@@ -33,9 +50,18 @@
       flex-direction: column;
       justify-content: center;
 
+      @include mobile {
+        padding-left: 0px;
+        align-items: center;
+      }
+
       h1 {
         font-size: 60px;
         margin: 10px 0;
+
+        @include mobile {
+          font-size: 40px;
+        }
       }
       h2 {
         font-size: 35px;
@@ -43,6 +69,10 @@
       h3 {
         font-size: 30px;
         min-height: 37px;
+
+        @include mobile {
+          font-size: 20px;
+        }
 
         span {
           font-size: inherit;

@@ -17,7 +17,7 @@ function Menu({ menuOpen, setMenuOpen }) {
           <a href="#testimonials">Testimonials</a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a href="#contacs">Contacts</a>
+          <a href="#contacts">Contacts</a>
         </li>
       </ul>
     </div>
