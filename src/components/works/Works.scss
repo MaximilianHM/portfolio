@@ -95,10 +95,14 @@
 
           h2 {
             font-size: 20px;
+
+            @include mobile {
+              font-size: 16px;
+            }
           }
 
           p {
-            font-size: 13px;
+            font-size: 10px;
           }
 
           span {
