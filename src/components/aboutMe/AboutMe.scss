@@ -1,0 +1,45 @@
+@import "../../global.scss";
+
+.aboutMe {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .container {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+
+    .right {
+      flex: 5;
+    }
+
+    .left {
+      height: 100%;
+      flex: 7;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .textAboutMe {
+        width: 80%;
+        line-height: 2.5;
+        font-size: 18px;
+      }
+
+      .techs {
+        svg {
+          font-size: 35px;
+          margin: 10px 5px;
+        }
+      }
+    }
+  }
+}

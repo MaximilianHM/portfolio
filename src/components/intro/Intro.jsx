@@ -11,7 +11,7 @@ function Intro() {
       backDelay: 1500,
       backSpeed: 60,
       showCursor: true,
-      strings: ["Frontend Developer"],
+      strings: ["Full Stack Developer"],
     });
   }, []);
   return (
@@ -30,7 +30,7 @@ function Intro() {
             <span></span>
           </h3>
         </div>
-        <a href="#portfolio">
+        <a href="#aboutMe">
           <BsChevronDown />
         </a>
       </div>
