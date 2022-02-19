@@ -6,6 +6,21 @@
   flex-direction: column;
   align-items: center;
 
+  .arrowDown {
+    a {
+      color: $mainFontColor;
+      bottom: 10px;
+      font-size: 40px;
+      animation: arrowBlink 2s infinite;
+    }
+
+    @keyframes arrowBlink {
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+
   h1 {
     font-size: 50px;
     color: #fff;
@@ -79,11 +94,11 @@
               transition: all 0.5s ease;
               border: 1px solid transparent;
               padding: 5px;
+              font-weight: 600;
             }
 
             &.left:hover {
-              color: #fff;
-              border: 1px solid white;
+              color: $bgColor;
               border-radius: 10px;
             }
 
@@ -94,6 +109,7 @@
               font-size: 30px;
               color: black;
               overflow: hidden;
+              transition: all 2s ease;
 
               &.right:hover {
                 color: #fff;

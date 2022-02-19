@@ -17,16 +17,32 @@
     align-items: center;
     margin: 0 20px;
 
-    .right {
+    .left {
       flex: 5;
     }
 
-    .left {
+    .right {
       height: 100%;
       flex: 7;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+
+      .arrowDown {
+        a {
+          color: $mainFontColor;
+          bottom: 10px;
+          font-size: 50px;
+          margin-left: 20%;
+          animation: arrowBlink 2s infinite;
+        }
+
+        @keyframes arrowBlink {
+          100% {
+            opacity: 0;
+          }
+        }
+      }
 
       .textAboutMe {
         width: 80%;

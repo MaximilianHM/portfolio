@@ -34,35 +34,76 @@ function Contacts() {
 
   return (
     <div className="contacts" id="contacts">
-      <h2>Get in touch</h2>
+      <h1>Contacts</h1>
       <div className="container">
         <div className="left">
-          <a href="https://www.linkedin.com/in/maximilianhm/">
-            <BsLinkedin />
-          </a>
-          <a href="https://github.com/MaximilianHM">
-            <AiOutlineGithub />
-          </a>
-          <a
-            href="assets/2022.01 - Maximilian H. Mayer - CV.pdf"
-            // download="Maximilian Haut Mayer"
-            target="_blank"
-          >
-            <HiOutlineDocumentDownload />
-            CV download
-          </a>
+          <h2>Get in touch</h2>
+          <div className="leftContainer">
+            <div className="linkedIn">
+              <a
+                href="https://www.linkedin.com/in/maximilianhm/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <BsLinkedin />
+              </a>
+            </div>
+
+            <div className="gitHub">
+              <a
+                href="https://github.com/MaximilianHM"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiOutlineGithub />
+              </a>
+            </div>
+            <div className="cvLink">
+              <a
+                href="assets/2022.01 - Maximilian H. Mayer - CV.pdf"
+                // download="Maximilian Haut Mayer"
+                target="_blank"
+              >
+                <HiOutlineDocumentDownload />
+              </a>
+              <a
+                href="assets/2022.01 - Maximilian H. Mayer - CV.pdf"
+                // download="Maximilian Haut Mayer"
+                target="_blank"
+              >
+                CV download
+              </a>
+            </div>
+          </div>
         </div>
         <div className="right">
           <form ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input type="text" name="name" />
-            <label>Email</label>
-            <input type="email" name="email" />
-            <label>Message</label>
-            <textarea name="message" />
-            <input type="submit" value="message" />
+            <h2>You can send me an e-mail</h2>
+            <input
+              className="name"
+              placeholder="Name"
+              type="text"
+              name="name"
+            />
+            <input
+              className="email"
+              placeholder="E-mail"
+              type="email"
+              name="email"
+            />
 
-            {message && <span>Thanks, I'll reply ASAP :) </span>}
+            <textarea
+              type="text"
+              placeholder="Write me a message :)"
+              name="message"
+            />
+            <input className="buttonSubmit" type="submit" value="message" />
+
+            {message && (
+              <div className="replyMessage">
+                <span>Thanks, I'll reply ASAP :) </span>
+              </div>
+            )}
           </form>
         </div>
       </div>

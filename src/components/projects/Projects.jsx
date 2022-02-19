@@ -1,5 +1,6 @@
 import "./Projects.scss";
 import { AiOutlineGithub } from "react-icons/ai";
+import { BsChevronDown } from "react-icons/bs";
 
 function Projects() {
   const data = [
@@ -70,6 +71,11 @@ function Projects() {
             <div className="bottom">{d.desc}</div>
           </div>
         ))}
+      </div>
+      <div className="arrowDown">
+        <a href="#projects">
+          <BsChevronDown />
+        </a>
       </div>
     </div>
   );

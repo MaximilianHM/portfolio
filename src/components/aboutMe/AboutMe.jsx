@@ -9,11 +9,11 @@ function AboutMe() {
     <div className="aboutMe" id="aboutMe">
       <h1>A little about me</h1>
       <div className="container">
-        <div className="right">
+        <div className="left">
           <h1>img?</h1>
         </div>
 
-        <div className="left">
+        <div className="right">
           <div className="textAboutMe">
             <p>My name is Maximilian Haut Mayer, but you can call me Max :)</p>
             <p>
@@ -33,9 +33,11 @@ function AboutMe() {
             <SiMongodb />
             <SiExpress />
           </div>
-          <a href="#projects">
-            <BsChevronDown />
-          </a>
+          <div className="arrowDown">
+            <a href="#projects">
+              <BsChevronDown />
+            </a>
+          </div>
         </div>
       </div>
     </div>

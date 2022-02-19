@@ -1,29 +1,182 @@
 @import "../../global.scss";
 
 .contacts {
-  background-color: lightblue;
+  background-color: white;
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
 
-  @include mobile {
-    flex-direction: column;
+  h1 {
+    font-size: 50px;
   }
 
-  button {
-    width: 150px;
-    height: 30px;
-    color: white;
-    background-color: crimson;
-    border: none;
-    border-radius: 10px;
-    font-weight: 500;
-    cursor: pointer;
+  .container {
+    height: 80%;
+    display: flex;
 
-    &.focus {
-      outline: none;
+    .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 6;
+
+      h2 {
+        margin-bottom: 50px;
+        color: $bgColor;
+      }
+
+      .leftContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px;
+
+        .linkedIn {
+          font-size: 50px;
+          svg {
+            color: #2867b2;
+            padding: 10px;
+            opacity: 0.5;
+            margin: 0 10px;
+            transition: all 1s ease;
+          }
+
+          svg:hover {
+            opacity: 1;
+          }
+        }
+        .gitHub {
+          font-size: 60px;
+          margin: 0 10px;
+          padding: 10px;
+
+          svg {
+            color: black;
+            opacity: 0.5;
+            transition: all 1s ease;
+          }
+
+          svg:hover {
+            opacity: 1;
+          }
+        }
+
+        .cvLink {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 10px;
+          opacity: 0.5;
+          transition: all 1s ease;
+
+          a {
+            text-decoration: none;
+            font-weight: 600;
+            color: $bgColor;
+          }
+
+          svg {
+            font-size: 50px;
+            margin: 0 10px;
+            color: $bgColor;
+          }
+        }
+
+        .cvLink:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    .right {
+      width: 90%;
+      padding: 20px;
+      flex: 6;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+
+      h2 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        color: $bgColor;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        border-radius: 15px;
+        background-color: $mainFontColor;
+        padding: 5px 10px;
+        margin: 10px;
+
+        textarea {
+          padding: 7px;
+          border-radius: 20px;
+          border-style: none;
+          margin-top: 10px;
+          max-height: 100px;
+          min-height: 100px;
+          height: 100px;
+          color: $bgColor;
+          font-weight: 600;
+        }
+
+        textarea:focus {
+          outline: none;
+        }
+
+        input {
+          color: $bgColor;
+          height: 40px;
+          margin-top: 10px;
+          padding: 0 10px;
+          font-weight: 600;
+        }
+
+        .name {
+          padding: 0 5px;
+          border-radius: 20px;
+          border-style: none;
+
+          outline: none;
+        }
+
+        .email {
+          padding: 0 5px;
+          border-radius: 20px;
+          border-style: none;
+          outline: none;
+        }
+
+        .buttonSubmit {
+          width: 150px;
+          height: 30px;
+          color: white;
+          background-color: crimson;
+          border: none;
+          border-radius: 10px;
+          font-weight: 500;
+          margin-bottom: 10px;
+          cursor: pointer;
+
+          &.focus {
+            outline: none;
+          }
+        }
+      }
     }
   }
 
-  span {
-    color: green;
+  .replyMessage {
+    background-color: $bgColor;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 2px 0;
   }
 }
