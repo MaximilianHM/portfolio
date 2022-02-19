@@ -37,7 +37,7 @@ function Contacts() {
       <h1>Contacts</h1>
       <div className="container">
         <div className="left">
-          <h2>Get in touch</h2>
+          <h2>Check my social Media Media and my CV</h2>
           <div className="leftContainer">
             <div className="linkedIn">
               <a
@@ -78,7 +78,7 @@ function Contacts() {
         </div>
         <div className="right">
           <form ref={form} onSubmit={sendEmail}>
-            <h2>You can send me an e-mail</h2>
+            <h2>Send me an e-mail</h2>
             <input
               className="name"
               placeholder="Name"
