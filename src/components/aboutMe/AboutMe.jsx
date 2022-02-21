@@ -18,13 +18,14 @@ function AboutMe() {
         <div className="right">
           <div className="textAboutMe">
             <p>My name is Maximilian Haut Mayer, but you can call me Max :)</p>
+            <p>I love to game, play football, and fishing.</p>
             <p>
-              Gaming, playing football, and fishing that's what I love to do.
+              I'm from Brazil, but I'm living in Portugal since 2019, and I have
+              a background in Law.
             </p>
             <p>
-              I am from Brasil, and I'm living in Portugal, with a background in
-              Law. After coming to Portugal, in May 2020 I started to learn more
-              about programming and became a Web Developer.
+              In May 2020 I started to learn more about programming and became a
+              Web Developer.
             </p>
           </div>
           <div className="techs">
