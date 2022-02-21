@@ -37,7 +37,7 @@ function Contacts() {
       <h1>Contacts</h1>
       <div className="container">
         <div className="left">
-          <h2>Check my social Media Media and my CV</h2>
+          <h2>Check my Social Media and my CV</h2>
           <div className="leftContainer">
             <div className="linkedIn">
               <a

@@ -11,7 +11,7 @@ function Intro() {
       backDelay: 1500,
       backSpeed: 60,
       showCursor: true,
-      strings: ["Full Stack Developer"],
+      strings: ["Jr. Full Stack Developer"],
     });
   }, []);
   return (

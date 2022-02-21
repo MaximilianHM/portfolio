@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
+  color: $secondaryFontColor;
 
   @include mobile {
     justify-content: space-between;
@@ -32,7 +32,7 @@
 
   h1 {
     font-size: 50px;
-    color: #fff;
+    color: $secondaryFontColor;
 
     @include mobile {
       font-size: 30px;
@@ -146,7 +146,7 @@
         }
 
         &.right {
-          background-color: white;
+          background-color: $secondaryFontColor;
           border-radius: 50%;
           height: 30px;
           font-size: 30px;
@@ -155,7 +155,7 @@
           transition: all 2s ease;
 
           &.right:hover {
-            color: #fff;
+            color: $secondaryFontColor;
             background-color: black;
           }
 
@@ -194,7 +194,7 @@
       }
 
       h4 {
-        color: white;
+        color: $secondaryFontColor;
         font-weight: 200;
         padding: 0 2px;
 

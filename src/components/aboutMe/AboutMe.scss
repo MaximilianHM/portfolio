@@ -1,16 +1,16 @@
 @import "../../global.scss";
 
 .aboutMe {
-  background-color: white;
+  background-color: $secondaryFontColor;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  color: #6441a5;
+  color: $bgColor;
 
   h1 {
     font-size: 50px;
-    color: #6441a5;
+    color: $bgColor;
 
     @include mobile {
       font-size: 30px;

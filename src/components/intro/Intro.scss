@@ -31,7 +31,7 @@
       float: right;
       transform: rotate(25deg);
       overflow: hidden;
-      margin-top: 30%;
+      margin-top: 20%;
 
       @include mobile {
         align-items: flex-start;
@@ -41,8 +41,8 @@
       }
 
       img {
-        height: 90%;
         transform: rotate(-25deg);
+        margin-top: 30%;
 
         @include mobile {
           margin-top: 5%;

@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .contacts {
-  background-color: white;
+  background-color: $secondaryFontColor;
   color: $mainColor;
   display: flex;
   flex-direction: column;
@@ -153,13 +153,13 @@
       }
 
       h2 {
-        margin-top: 10px;
-        margin-bottom: 20px;
+        margin: 10px 0 20px 0;
         overflow: hidden;
-        color: $mainColor;
+        color: $secondaryFontColor;
 
         @include mobile {
           font-size: 18px;
+          margin: 5px 0;
         }
       }
 
@@ -214,7 +214,7 @@
           width: 150px;
           height: 30px;
           color: white;
-          background-color: crimson;
+          background-color: $bgColor;
           border: none;
           border-radius: 10px;
           font-weight: 500;
@@ -230,7 +230,7 @@
   }
 
   .replyMessage {
-    background-color: $mainColor;
+    background-color: green;
     color: white;
     font-size: 16px;
     font-weight: 500;

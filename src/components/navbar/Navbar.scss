@@ -3,7 +3,7 @@
 .navbar {
   width: 100%;
   height: 70px;
-  background-color: white;
+  background-color: $secondaryFontColor;
   color: $mainColor;
   position: fixed;
   top: 0;
@@ -27,8 +27,6 @@
         text-decoration: none;
         color: inherit;
         margin-right: 40px;
-        // font-family: "Montserrat", sans-serif;
-        // font-family: "Righteous", cursive;
         font-family: "Staatliches", cursive;
       }
     }
@@ -55,19 +53,19 @@
 
   &.active {
     background-color: $mainColor;
-    color: white;
+    color: $secondaryFontColor;
 
     .hamburguer {
       span {
         &:first-child {
-          background-color: white;
+          background-color: $secondaryFontColor;
           transform: rotate(45deg);
         }
         &:nth-child(2) {
           opacity: 0;
         }
         &:last-child {
-          background-color: white;
+          background-color: $secondaryFontColor;
           transform: rotate(-45deg);
         }
       }
