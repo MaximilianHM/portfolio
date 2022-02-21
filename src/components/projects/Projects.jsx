@@ -9,7 +9,7 @@ function Projects() {
       name: "Dev life",
       title: "Clicking Game",
       img: "assets/bg.png",
-      desc: "This game to represent the journey to become a web developer.",
+      desc: "This game is a representation of the journey to become a web developer",
       demoLink: "https://maximilianhm.github.io/Project01-ironhack/",
       RepoLink: "https://github.com/MaximilianHM/Project01-ironhack",
     },
