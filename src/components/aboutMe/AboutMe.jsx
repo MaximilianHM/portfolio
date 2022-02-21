@@ -10,15 +10,19 @@ function AboutMe() {
       <h1>A little about me</h1>
       <div className="container">
         <div className="left">
-          <h1>img?</h1>
+          <img src="assets/gk.jpg" alt="goalkeeper" />
+          <img src="assets/fishing.jpg" alt="fishing lure" />
+          <img src="assets/game.jpg" alt="gaming" />
         </div>
 
         <div className="right">
           <div className="textAboutMe">
             <p>My name is Maximilian Haut Mayer, but you can call me Max :)</p>
             <p>
-              Gaming, playing football, and fishing that's what I love to do, I
-              am from Brasil, and I'm living in Portugal, with a background in
+              Gaming, playing football, and fishing that's what I love to do.
+            </p>
+            <p>
+              I am from Brasil, and I'm living in Portugal, with a background in
               Law. After coming to Portugal, in May 2020 I started to learn more
               about programming and became a Web Developer.
             </p>

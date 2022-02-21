@@ -12,43 +12,24 @@
   box-shadow: 0px 1px 2px gray;
 
   .wrapper {
-    padding: 10px 30px;
+    padding: 0 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     .left {
       display: flex;
       align-items: center;
 
       .logo {
-        font-size: 40px;
+        font-size: 50px;
         font-weight: bold;
         text-decoration: none;
         color: inherit;
         margin-right: 40px;
         // font-family: "Montserrat", sans-serif;
-        font-family: "Righteous", cursive;
-        // font-family: "Staatliches", cursive;
-      }
-
-      .itemContainer {
-        display: flex;
-        align-items: center;
-        margin-right: 30px;
-
-        @include mobile {
-          display: none;
-        }
-
-        .icon {
-          font-size: 18px;
-          margin-right: 5px;
-        }
-
-        span {
-          font-size: 15px;
-          font-weight: 500;
-        }
+        // font-family: "Righteous", cursive;
+        font-family: "Staatliches", cursive;
       }
     }
 

@@ -27,9 +27,9 @@ function Projects() {
       id: 3,
       name: "Timex",
       title: "Task Manager App",
-      img: "assets/card.png",
+      img: "assets/timex-logo.png",
       desc: "This application was developed to help the client to organize and manage tasks.",
-      demoLink: "https://google.com",
+      demoLink: "https://timexapp.netlify.app/",
       RepoLink: "https://github.com/MaximilianHM/organizer-client",
       RepoLink2: "https://github.com/MaximilianHM/organizer-server",
     },
@@ -45,35 +45,35 @@ function Projects() {
               <div className="demoImg">
                 <img className="demo" src={d.img} alt={d.name} />
               </div>
-              <div className="demoLinks">
-                <a
-                  href={d.demoLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="left"
-                >
-                  Demo Link
-                </a>
-                <a
-                  href={d.RepoLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="right"
-                >
-                  <AiOutlineGithub />
-                </a>
-              </div>
             </div>
             <div className="center">
               <h3>{d.name}</h3>
               <h4>{d.title}</h4>
             </div>
             <div className="bottom">{d.desc}</div>
+            <div className="demoLinks">
+              <a
+                href={d.demoLink}
+                target="_blank"
+                rel="noreferrer"
+                className="left"
+              >
+                Demo Link
+              </a>
+              <a
+                href={d.RepoLink}
+                target="_blank"
+                rel="noreferrer"
+                className="right"
+              >
+                <AiOutlineGithub />
+              </a>
+            </div>
           </div>
         ))}
       </div>
       <div className="arrowDown">
-        <a href="#projects">
+        <a href="#contacts">
           <BsChevronDown />
         </a>
       </div>

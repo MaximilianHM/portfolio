@@ -1,4 +1,4 @@
-$mainColor: #15023a;
+$mainColor: #6441a5;
 $bgColor: #6a4df0;
 $mainFontColor: #90ee90;
 $secondaryFontColor: #fff;
@@ -9,4 +9,10 @@ $width: 768px;
   @media (max-width: $width) {
     @content;
   }
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
 }

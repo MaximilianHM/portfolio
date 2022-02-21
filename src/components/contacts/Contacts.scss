@@ -2,18 +2,28 @@
 
 .contacts {
   background-color: white;
+  color: $mainColor;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
 
   h1 {
+    color: $mainColor;
     font-size: 50px;
+
+    @include mobile {
+      font-size: 30px;
+    }
   }
 
   .container {
     height: 80%;
     display: flex;
+
+    @include mobile {
+      flex-direction: column-reverse;
+    }
 
     .left {
       display: flex;
@@ -22,10 +32,19 @@
       align-items: center;
       flex: 6;
 
+      @include mobile {
+        flex: 2;
+      }
+
       h2 {
         margin-bottom: 50px;
         color: $bgColor;
-        width: 50%;
+        width: 80%;
+
+        @include mobile {
+          font-size: 16px;
+          margin-bottom: 0;
+        }
       }
 
       .leftContainer {
@@ -36,12 +55,21 @@
 
         .linkedIn {
           font-size: 50px;
+
+          @include mobile {
+            font-size: 30px;
+          }
+
           svg {
             color: #2867b2;
             padding: 10px;
             opacity: 0.5;
             margin: 0 10px;
             transition: all 1s ease;
+
+            @include mobile {
+              opacity: 1;
+            }
           }
 
           svg:hover {
@@ -53,10 +81,18 @@
           margin: 0 10px;
           padding: 10px;
 
+          @include mobile {
+            font-size: 35px;
+          }
+
           svg {
             color: black;
             opacity: 0.5;
             transition: all 1s ease;
+
+            @include mobile {
+              opacity: 1;
+            }
           }
 
           svg:hover {
@@ -72,16 +108,29 @@
           opacity: 0.5;
           transition: all 1s ease;
 
+          @include mobile {
+            opacity: 1;
+          }
+
           a {
             text-decoration: none;
             font-weight: 600;
             color: $bgColor;
+
+            @include mobile {
+              font-size: 12px;
+              opacity: 1;
+            }
           }
 
           svg {
             font-size: 50px;
             margin: 0 10px;
             color: $bgColor;
+
+            @include mobile {
+              font-size: 20px;
+            }
           }
         }
 
@@ -99,11 +148,19 @@
       flex-direction: column;
       align-items: start;
 
+      @include mobile {
+        align-items: center;
+      }
+
       h2 {
         margin-top: 10px;
         margin-bottom: 20px;
         overflow: hidden;
-        color: $bgColor;
+        color: $mainColor;
+
+        @include mobile {
+          font-size: 18px;
+        }
       }
 
       form {
@@ -143,7 +200,6 @@
           padding: 0 5px;
           border-radius: 20px;
           border-style: none;
-
           outline: none;
         }
 
@@ -174,11 +230,19 @@
   }
 
   .replyMessage {
-    background-color: $bgColor;
+    background-color: $mainColor;
     color: white;
     font-size: 16px;
     font-weight: 500;
     border-radius: 10px;
     padding: 2px 0;
+    overflow: hidden;
+
+    @include mobile {
+      align-items: center;
+      font-size: 12px;
+      font-weight: 400;
+      padding: 5px 0;
+    }
   }
 }

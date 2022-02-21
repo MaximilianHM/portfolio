@@ -97,7 +97,7 @@ function Contacts() {
               placeholder="Write me a message :)"
               name="message"
             />
-            <input className="buttonSubmit" type="submit" value="message" />
+            <input className="buttonSubmit" type="submit" value="Send" />
 
             {message && (
               <div className="replyMessage">

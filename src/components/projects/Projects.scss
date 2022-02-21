@@ -5,6 +5,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
+
+  @include mobile {
+    justify-content: space-between;
+  }
 
   .arrowDown {
     a {
@@ -12,6 +17,10 @@
       bottom: 10px;
       font-size: 40px;
       animation: arrowBlink 2s infinite;
+
+      @include mobile {
+        font-size: 20px;
+      }
     }
 
     @keyframes arrowBlink {
@@ -26,7 +35,7 @@
     color: #fff;
 
     @include mobile {
-      font-size: 20px;
+      font-size: 30px;
     }
   }
 
@@ -50,12 +59,13 @@
       box-shadow: 0px 0px 15px -8px black;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-between;
       padding: 20px;
 
       @include mobile {
         height: 180px;
         margin: 10px 0;
+        padding: 10px;
       }
 
       &.featured {
@@ -78,100 +88,118 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+      }
 
-        .demoLinks {
-          width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: space-around;
+      img {
+        &.demo {
+          width: 80%;
+          border-radius: 10px;
+          object-fit: cover;
+          margin: 10px 30px;
+          overflow: hidden;
 
-          svg,
-          a {
-            &.left {
-              color: black;
-              font-size: 18px;
-              text-decoration: none;
-              transition: all 0.5s ease;
-              border: 1px solid transparent;
-              padding: 5px;
-              font-weight: 600;
-            }
-
-            &.left:hover {
-              color: $bgColor;
-              border-radius: 10px;
-            }
-
-            &.right {
-              background-color: white;
-              border-radius: 50%;
-              height: 30px;
-              font-size: 30px;
-              color: black;
-              overflow: hidden;
-              transition: all 2s ease;
-
-              &.right:hover {
-                color: #fff;
-                background-color: black;
-              }
-            }
-          }
-        }
-
-        img {
-          &.demo {
-            width: 80%;
-            border-radius: 10px;
-            object-fit: cover;
-            margin: 10px 30px;
-
-            @include mobile {
-              width: 30px;
-              height: 30px;
-            }
+          @include mobile {
+            display: none;
           }
         }
       }
+    }
 
-      .bottom {
+    .bottom {
+      padding: 10px;
+      background-color: $mainColor;
+      border-radius: 10px;
+      font-weight: 500;
+
+      @include mobile {
+        font-size: 10px;
         padding: 10px;
-        background-color: rgb(250, 244, 245);
-        border-radius: 10px;
-        font-weight: 500;
-
-        @include mobile {
-          font-size: 10px;
-          padding: 5px;
-        }
       }
+    }
 
-      .center {
-        transform: skew(15deg, 0deg);
-        background-color: white;
-        font-style: italic;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 5px 0;
+    .demoLinks {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
 
-        h3 {
-          margin-bottom: 5px;
-          padding: 0 2px;
+      svg,
+      a {
+        &.left {
+          color: black;
+          font-size: 18px;
+          text-decoration: none;
+          transition: all 0.5s ease;
+          border: 1px solid transparent;
+          padding: 5px;
+          font-weight: 600;
 
           @include mobile {
             font-size: 14px;
+            padding: 0 5px;
           }
         }
 
-        h4 {
-          color: grey;
-          padding: 0 2px;
+        &.left:hover {
+          color: $bgColor;
+          border-radius: 10px;
+        }
+
+        &.right {
+          background-color: white;
+          border-radius: 50%;
+          height: 30px;
+          font-size: 30px;
+          color: black;
+          overflow: hidden;
+          transition: all 2s ease;
+
+          &.right:hover {
+            color: #fff;
+            background-color: black;
+          }
 
           @include mobile {
-            font-size: 10px;
+            font-size: 20px;
+            height: 20px;
           }
+        }
+      }
+    }
+
+    .center {
+      transform: skew(15deg, 0deg);
+      background-color: $mainColor;
+      font-style: italic;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 5px 0;
+
+      @include mobile {
+        flex-direction: row;
+        justify-content: space-evenly;
+        // align-items: baseline;
+        margin: 5px;
+        height: 20px;
+      }
+
+      h3 {
+        padding: 0 5px;
+
+        @include mobile {
+          font-size: 14px;
+        }
+      }
+
+      h4 {
+        color: white;
+        font-weight: 200;
+        padding: 0 2px;
+
+        @include mobile {
+          font-size: 10px;
         }
       }
     }
