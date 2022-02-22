@@ -26,8 +26,7 @@
       background-color: $mainFontColor;
       border-radius: 10%;
       display: flex;
-      align-items: flex-end;
-      justify-content: center;
+      align-items: center;
       float: right;
       transform: rotate(25deg);
       overflow: hidden;
@@ -42,7 +41,6 @@
 
       img {
         transform: rotate(-25deg);
-        margin-top: 30%;
 
         @include mobile {
           margin-top: 5%;
