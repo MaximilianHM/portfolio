@@ -29,10 +29,10 @@ function Intro() {
             <span ref={textRef}></span>
             <span></span>
           </h3>
+          <a href="#aboutMe">
+            <BsChevronDown />
+          </a>
         </div>
-        <a href="#aboutMe">
-          <BsChevronDown />
-        </a>
       </div>
     </div>
   );

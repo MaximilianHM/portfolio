@@ -115,6 +115,10 @@
       font-size: 50px;
       margin-left: 20%;
       animation: arrowBlink 2s infinite;
+
+      @include smallMobile {
+        font-size: 20px;
+      }
     }
 
     @keyframes arrowBlink {
