@@ -4,9 +4,16 @@ $mainFontColor: #02a676;
 $secondaryFontColor: #fff;
 
 $width: 768px;
+$smallX: 568px;
 
 @mixin mobile {
   @media (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin smallMobile {
+  @media (max-width: $smallX) {
     @content;
   }
 }

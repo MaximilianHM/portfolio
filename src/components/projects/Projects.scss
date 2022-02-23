@@ -68,6 +68,11 @@
         padding: 10px;
       }
 
+      @include smallMobile {
+        width: 90%;
+        padding: 5px;
+      }
+
       &.featured {
         height: 300px;
         height: 70%;
@@ -81,6 +86,10 @@
 
       &:hover {
         transform: scale(1.1);
+
+        @include smallMobile {
+          transform: scale(1);
+        }
       }
 
       .top {
@@ -180,9 +189,12 @@
       @include mobile {
         flex-direction: row;
         justify-content: space-evenly;
-        // align-items: baseline;
         margin: 5px;
         height: 20px;
+      }
+
+      @include smallMobile {
+        height: 15px;
       }
 
       h3 {
@@ -190,6 +202,10 @@
 
         @include mobile {
           font-size: 14px;
+        }
+
+        @include smallMobile {
+          font-size: 12px;
         }
       }
 

@@ -79,6 +79,10 @@
           line-height: 2;
           font-weight: 500;
         }
+
+        @include smallMobile {
+          font-size: 12px;
+        }
       }
 
       .techs {
@@ -88,6 +92,10 @@
         svg {
           font-size: 35px;
           margin: 10px 5px;
+
+          @include smallMobile {
+            font-size: 25px;
+          }
         }
       }
     }
