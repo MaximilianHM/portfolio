@@ -172,6 +172,11 @@
             font-size: 20px;
             height: 20px;
           }
+
+          @include smallMobile {
+            font-size: 14px;
+            height: 14px;
+          }
         }
       }
     }

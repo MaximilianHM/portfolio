@@ -167,7 +167,7 @@
         }
 
         @include smallMobile {
-          font-size: 16px;
+          font-size: 14px;
           margin: 0px;
         }
       }
@@ -217,6 +217,7 @@
           width: 95%;
 
           @include smallMobile {
+            height: 20px;
             font-size: 12px;
           }
         }
@@ -245,6 +246,10 @@
           font-weight: 500;
           margin-bottom: 10px;
           cursor: pointer;
+
+          @include smallMobile {
+            height: 20px;
+          }
 
           &.focus {
             outline: none;
